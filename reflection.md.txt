@@ -1,0 +1,26 @@
+# Data Cleaning using Copilot Reflection 
+
+# What Copilot Generated
+For this assignment, GitHub Copilot was enabled and prompted through descriptive
+comments written above function definitions in `data_cleaning.py`. These
+comments described the intended behavior of functions for loading data,
+cleaning column names, handling missing values, and removing invalid rows.
+Copilot was intended to assist with generating initial function structure and
+logic based on these prompts.
+
+# What I Modified
+During my working sessions, Copilot did not consistently generate usable code
+suggestions in response to comments or partial implementations. As a result,
+most of the functions were implemented manually using pandas and Python logic.
+The code was structured into reusable functions and variable names were chosen for
+clarity to ensure the script runs cleanly from the beginning to end.
+
+# What I Learned
+For me, assignment reinforced the importance of understanding data cleaning logic
+rather than relying entirely on automated code generation. I learned how to
+systematically clean tabular data by standardizing column names,
+handling missing values, converting data types safely, and removing invalid
+records. I also learned that GitHub Copilot can be a helpful tool when it
+provides suggestions, but it is not guaranteed to respond in every situation.
+Effective use of AI coding tools still requires a strong understanding of the
+problem and the ability to design and refine solutions independently.

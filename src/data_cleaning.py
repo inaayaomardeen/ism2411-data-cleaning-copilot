@@ -100,3 +100,5 @@ if __name__ == "__main__":
     df_clean.to_csv(cleaned_path, index=False)
     print("Cleaning complete. First few rows:")
     print(df_clean.head())
+
+    #Note: Github Copilot was enabled and attempted during this assignment by writing descriptive comments to prompt code suggestions. 

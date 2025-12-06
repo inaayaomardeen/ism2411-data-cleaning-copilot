@@ -6,17 +6,24 @@ comments written above function definitions in `data_cleaning.py`. These
 comments described the intended behavior of functions for loading data,
 cleaning column names, handling missing values, and removing invalid rows.
 Copilot was intended to assist with generating initial function structure and
-logic based on these prompts.
+logic based on these prompts. In particular, functions such as `clean_column_names` and `handle_missing_values`
+were written with comment prompts that could guide the AI tool toward using
+common pandas patterns such as `.str.lower()` for column normalization and `pd.to_numeric`
+for safely converting numeric fields. 
 
 # What I Modified
-During my working sessions, Copilot did not consistently generate usable code
-suggestions in response to comments or partial implementations. As a result,
-most of the functions were implemented manually using pandas and Python logic.
+As I created the code, Copilot did not consistently generate usable code
+suggestions in response to comments or partial implementations.
+As a result, the function logic was implemented manually using pandas best
+practices, informed by the patterns regularly suggested by Copilot.
+They were then refined by copying DataFrames to avoid unintended side effects,
+detecting price and quantity columns, adding file existence checks,
+and ensuring the output directory was created before writing the cleaned CSV. 
 The code was structured into reusable functions and variable names were chosen for
 clarity to ensure the script runs cleanly from the beginning to end.
 
 # What I Learned
-For me, assignment reinforced the importance of understanding data cleaning logic
+For me, the assignment reinforced the importance of understanding data cleaning logic
 rather than relying entirely on automated code generation. I learned how to
 systematically clean tabular data by standardizing column names,
 handling missing values, converting data types safely, and removing invalid
